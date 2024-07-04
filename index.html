@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5000CJ1GRE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5000CJ1GRE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-5000CJ1GRE');
-  </script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="iKF71tct4oGBMl5O27F-PddL20eTCkJBjf3x7Uyj2iA" />
-  <title>MSR Portfolio</title>
+      gtag("config", "G-5000CJ1GRE");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="iKF71tct4oGBMl5O27F-PddL20eTCkJBjf3x7Uyj2iA"
+    />
+    <title>MSR Portfolio</title>
 
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/portfolio-image.png"
+              alt="Monish Soundar Raj"
+              width="90"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Monish Soundar Raj">Monish Soundar Raj</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/portfolio-image.png" alt="Monish Soundar Raj" width="90">
-        </figure>
+            <p class="title">Research Assistant | Web developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Monish Soundar Raj">Monish Soundar Raj</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Research Assistant | Web developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:msoundar@charlotte.edu" class="contact-link"
+                  >msoundar@charlotte.edu</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">University</p>
 
-          <li class="contact-item">
+                <p class="contact-link">UNCC</p>
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:msoundar@charlotte.edu" class="contact-link">msoundar@charlotte.edu</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">University</p>
-
-              <p class="contact-link">UNCC</p>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -117,176 +125,332 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <address>Charlotte, North Carolina, USA</address>
+              </div>
+            </li>
+          </ul>
 
-              <address>Charlotte, North Carolina, USA</address>
-            </div>
+          <div class="separator"></div>
 
-          </li>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/monish-soundar-raj-613207218/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-        </ul>
+            <li class="social-item">
+              <a href="https://github.com/MonishSoundarRaj" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-        <div class="separator"></div>
+            <li class="social-item">
+              <a
+                href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=u6Y0pW4AAAAJ&gmla=AKKJWFf2RYCQiSArTrWXxiGgZNcuHOWd9J0oW228729HFpXp7IHhjk7OHiLYrIideVdSyJF4nGBCfpllNoSv7vaYAZl7Jb6Pc3B1mvs"
+                class="social-link"
+              >
+                <ion-icon name="school-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/monish-soundar-raj-613207218/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/MonishSoundarRaj" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=u6Y0pW4AAAAJ&gmla=AKKJWFf2RYCQiSArTrWXxiGgZNcuHOWd9J0oW228729HFpXp7IHhjk7OHiLYrIideVdSyJF4nGBCfpllNoSv7vaYAZl7Jb6Pc3B1mvs" class="social-link">
-              <ion-icon name="school-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-
-      </nav>
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I am currently an undergraduate researcher and a budding web
+              developer at the High-Performance Computing Lab at the University
+              of North Carolina - Charlotte, where my curiosity and passion for
+              technology drive my work. Under the guidance of Dr. Dong Dai, my
+              academic journey has been marked by a commitment to leveraging
+              artificial intelligence for generating synthetic datasets and
+              analyzing job traces in computing clusters. My interest in
+              technology began to take a professional shape after my involvement
+              in various projects during my bachelor's degree program in
+              Computer Science at UNCC.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I am currently an undergraduate researcher and a budding web developer at the High-Performance Computing Lab at the University of North Carolina - Charlotte, where my curiosity and passion for technology drive my work. Under the guidance of Dr. Dong Dai, my academic journey has been marked by a commitment to leveraging artificial intelligence for generating synthetic datasets and analyzing job traces in computing clusters. My interest in technology began to take a professional shape after my involvement in various projects during my bachelor's degree program in Computer Science at UNCC.           
-          </p>
+            <p>
+              My work primarily revolves around the intersection of
+              high-performance computing, data analysis, and web development. I
+              specialize in creating innovative solutions that simulate
+              real-world data for research purposes and developing interactive
+              web applications to visualize complex datasets. This unique blend
+              of interests has led to contributions in significant research
+              initiatives, including a workshop paper submission for JSSPP'24
+              and co-authorship of a paper accepted by the prestigious IPDPS'24
+              conference.
+            </p>
+          </section>
 
-          <p>
-          My work primarily revolves around the intersection of high-performance computing, data analysis, and web development. I specialize in creating innovative solutions that simulate real-world data for research purposes and developing interactive web applications to visualize complex datasets. This unique blend of interests has led to contributions in significant research initiatives, including a workshop paper submission for JSSPP'24 and co-authorship of a paper accepted by the prestigious IPDPS'24 conference.
-          </p>
-        </section>
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
-          <h3 class="h3 service-title">News</h3>
-          <ul class="new-list">
-            <li><p><b>[May. 2024]</b> Starting a new position as a Research Scholar.</p></li>
-            <li><p><b>[May. 2024]</b> Excited to share that I made the Dean's List for Spring 2024!</p></li>
-            <li><p><b>[Apr. 2024]</b> Thrilled to announce that I have been accepted into the <a class="a-link" href="https://our.charlotte.edu/programs/our-summer-research-scholar-program/">OUR Summer 24 Research Scholar position</a>.</p></li>
-            <li><p><b>[Mar. 2024]</b> Our paper about Machine Learning-based Synthetic Job Trace Generation Methods is accepted by <a class="a-link" href="https://jsspp.org/">JSSPP’24</a> workshop at <a class="a-link" href="https://www.ipdps.org/">IPDPS'24</a>.</p></li>
-            <li><p><b>[Jan. 2024]</b> Got into Chancellor's list Fall 2023 for excellent academic performance.</p></li>
-            <li><p><b>[Dec. 2023]</b> Our paper about AI and HPC job traces analysis is accepted to <a class="a-link" href="https://www.ipdps.org/">IPDPS'24</a>.</p></li>
-            <li><p><b>[Aug. 2023]</b> Started working as a Research Assistant in the <a class="a-link" href="https://hpcs.charlotte.edu/">High-performance Computing Lab (HPC) at UNCC</a>, focusing on AI and HPC job traces analysis. My advisors in this research are <a class="a-link" href="https://cci.charlotte.edu/directory/dong-dai/">Dr. Dong Dai</a> and <a class="a-link" href="https://zhangdistephen.github.io/">Di Zhang, PhD</a> .</p></li>
-            <li><p><b>[Aug. 2023]</b> Successfully launched the <a class="a-link" href="https://lumos-job-traces.streamlit.app/">Lumos Job Traces web application</a> at HPCS Lab UNCC, visualizing job trace cluster characteristics for high-performance computing environments. This project marks the completion of my role as a Web Developer for HPC, building engaging and informative platforms.</p></li>
-            <li><p><b>[Jun. 2023]</b> Joined a new role as a student Web Developer for the High-Performance Computing Lab, Department of College of Computing and Informatics, <a class="a-link" href="https://hpcs.charlotte.edu/">UNCC</a>.</p></li>
-            <li><p><b>[May. 2023]</b> Completed the <a class="a-link" href="https://exhibits.charlotte.edu/s/gomanmemoryproject/page/welcome">Goman Memory Project</a> as a Student Web Developer for the <a class="a-link" href="https://africana.charlotte.edu/">Department of Africana Studies at UNCC</a>, enhancing the digital representation of the Haitian Revolution.</p></li>
-            <li><p><b>[Mar. 2023]</b> Joined a new role as a Student Web Developer for the Department of American Studies at UNCC, focusing on developing engaging and informative digital content.</p></li>            
-          </ul>
-        </section>
-        <section class="publications">
-          <h3 class="h3 publications-title">Publications</h3>
-          <ul class="publications-list">
-            <li>
-              <p>
-                <strong>An Empirical Study of Machine Learning-based Synthetic Job Trace Generation Methods.</strong><br>
-                <span class="publication-detail"><strong>Monish Soundar Raj</strong>, Thomas MacDougall, Di Zhang, and Dong Dai<br>
-                <em>Approved for the 27th Job Scheduling Strategies for Parallel Processing Workshop (JSSPP’24), 2024.</em><br>
-                <a href="https://drive.google.com/file/d/16DSXE8pSu0XJyWknAvgKtmo9lGymNOSr/view?usp=sharing" class="publication-link">View Paper PDF</a>,
-                <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="publication-link">View GitHub Repository</a></span>
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Cross-System Analysis of Job Characterization and Scheduling in Large-Scale Computing Clusters.</strong><br>
-                <span class="publication-detail">Di Zhang, <strong>Monish Soundar Raj</strong>, Bing Xie, Sheng Di, Dong Dai<br>
-                <em>Approved for the 38th IEEE International Parallel & Distributed Processing Symposium (IPDPS’24), 2024.</em><br>
-                <a href="https://drive.google.com/file/d/12-7PToUaraiZ4J1UPTlPLWlJxhe6dezU/view" class="publication-link">View Paper PDF</a>,
-                <a href="https://lumos-job-traces.streamlit.app/" class="publication-link">Web App</a>,
-                <a href="https://github.com/DIR-LAB/lumos" class="publication-link">GitHub Repository</a></span>
-              </p>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="awards">
-          <h3 class="h3 awards-title">Awards</h3>
-          <!-- <hr class="hr-about"> -->
-          <ul class="awards-list">
-            <li>
-              <p>
-                <strong>TCPP Travel Grant Award $700</strong><br>
-                <span class="publication-detail">Received $700 to attend and present at the International Parallel and Distributed Processing Symposium (IPDPS'24), San Francisco, California.</span>
-              </p>
-            </li>
+          <section class="service">
+            <h3 class="h3 service-title">News</h3>
+            <ul class="new-list">
+              <li>
+                <p>
+                  <b>[May. 2024]</b> Starting a new position as a Research
+                  Scholar.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[May. 2024]</b> Excited to share that I made the Dean's
+                  List for Spring 2024!
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Apr. 2024]</b> Thrilled to announce that I have been
+                  accepted into the
+                  <a
+                    class="a-link"
+                    href="https://our.charlotte.edu/programs/our-summer-research-scholar-program/"
+                    >OUR Summer 24 Research Scholar position</a
+                  >.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Mar. 2024]</b> Our paper about Machine Learning-based
+                  Synthetic Job Trace Generation Methods is accepted by
+                  <a class="a-link" href="https://jsspp.org/">JSSPP’24</a>
+                  workshop at
+                  <a class="a-link" href="https://www.ipdps.org/">IPDPS'24</a>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Jan. 2024]</b> Got into Chancellor's list Fall 2023 for
+                  excellent academic performance.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Dec. 2023]</b> Our paper about AI and HPC job traces
+                  analysis is accepted to
+                  <a class="a-link" href="https://www.ipdps.org/">IPDPS'24</a>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Aug. 2023]</b> Started working as a Research Assistant in
+                  the
+                  <a class="a-link" href="https://hpcs.charlotte.edu/"
+                    >High-performance Computing Lab (HPC) at UNCC</a
+                  >, focusing on AI and HPC job traces analysis. My advisors in
+                  this research are
+                  <a
+                    class="a-link"
+                    href="https://cci.charlotte.edu/directory/dong-dai/"
+                    >Dr. Dong Dai</a
+                  >
+                  and
+                  <a class="a-link" href="https://zhangdistephen.github.io/"
+                    >Di Zhang, PhD</a
+                  >
+                  .
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Aug. 2023]</b> Successfully launched the
+                  <a
+                    class="a-link"
+                    href="https://lumos-job-traces.streamlit.app/"
+                    >Lumos Job Traces web application</a
+                  >
+                  at HPCS Lab UNCC, visualizing job trace cluster
+                  characteristics for high-performance computing environments.
+                  This project marks the completion of my role as a Web
+                  Developer for HPC, building engaging and informative
+                  platforms.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Jun. 2023]</b> Joined a new role as a student Web
+                  Developer for the High-Performance Computing Lab, Department
+                  of College of Computing and Informatics,
+                  <a class="a-link" href="https://hpcs.charlotte.edu/">UNCC</a>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[May. 2023]</b> Completed the
+                  <a
+                    class="a-link"
+                    href="https://exhibits.charlotte.edu/s/gomanmemoryproject/page/welcome"
+                    >Goman Memory Project</a
+                  >
+                  as a Student Web Developer for the
+                  <a class="a-link" href="https://africana.charlotte.edu/"
+                    >Department of Africana Studies at UNCC</a
+                  >, enhancing the digital representation of the Haitian
+                  Revolution.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>[Mar. 2023]</b> Joined a new role as a Student Web
+                  Developer for the Department of American Studies at UNCC,
+                  focusing on developing engaging and informative digital
+                  content.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="publications">
+            <h3 class="h3 publications-title">Publications</h3>
+            <ul class="publications-list">
+              <li>
+                <p>
+                  <strong
+                    >An Empirical Study of Machine Learning-based Synthetic Job
+                    Trace Generation Methods.</strong
+                  ><br />
+                  <span class="publication-detail"
+                    ><strong>Monish Soundar Raj</strong>, Thomas MacDougall, Di
+                    Zhang, and Dong Dai<br />
+                    <em
+                      >Approved for the 27th Job Scheduling Strategies for
+                      Parallel Processing Workshop (JSSPP’24), 2024.</em
+                    ><br />
+                    <a
+                      href="https://drive.google.com/file/d/16DSXE8pSu0XJyWknAvgKtmo9lGymNOSr/view?usp=sharing"
+                      class="publication-link"
+                      >View Paper PDF</a
+                    >,
+                    <a
+                      href="https://github.com/DIR-LAB/Gen-Parallel-Workloads"
+                      class="publication-link"
+                      >View GitHub Repository</a
+                    ></span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong
+                    >Cross-System Analysis of Job Characterization and
+                    Scheduling in Large-Scale Computing Clusters.</strong
+                  ><br />
+                  <span class="publication-detail"
+                    >Di Zhang, <strong>Monish Soundar Raj</strong>, Bing Xie,
+                    Sheng Di, Dong Dai<br />
+                    <em
+                      >Approved for the 38th IEEE International Parallel &
+                      Distributed Processing Symposium (IPDPS’24), 2024.</em
+                    ><br />
+                    <a
+                      href="https://drive.google.com/file/d/12-7PToUaraiZ4J1UPTlPLWlJxhe6dezU/view"
+                      class="publication-link"
+                      >View Paper PDF</a
+                    >,
+                    <a
+                      href="https://lumos-job-traces.streamlit.app/"
+                      class="publication-link"
+                      >Web App</a
+                    >,
+                    <a
+                      href="https://github.com/DIR-LAB/lumos"
+                      class="publication-link"
+                      >GitHub Repository</a
+                    ></span
+                  >
+                </p>
+              </li>
+            </ul>
+          </section>
 
-            <li>
-              <p>
-                <strong>Office of Undergrad Research Travel Grant Award $500</strong><br>
-                <span class="publication-detail">Awarded $500 for travel expenses to attend and present in the International Parallel and Distributed Processing Symposium (IPDPS'24), San Francisco, California.</span>
-              </p>
-            </li>
-          </ul>
-        </section>
+          <section class="awards">
+            <h3 class="h3 awards-title">Awards</h3>
+            <!-- <hr class="hr-about"> -->
+            <ul class="awards-list">
+              <li>
+                <p>
+                  <strong>TCPP Travel Grant Award $700</strong><br />
+                  <span class="publication-detail"
+                    >Received $700 to attend and present at the International
+                    Parallel and Distributed Processing Symposium (IPDPS'24),
+                    San Francisco, California.</span
+                  >
+                </p>
+              </li>
 
+              <li>
+                <p>
+                  <strong
+                    >Office of Undergrad Research Travel Grant Award
+                    $500</strong
+                  ><br />
+                  <span class="publication-detail"
+                    >Awarded $500 for travel expenses to attend and present in
+                    the International Parallel and Distributed Processing
+                    Symposium (IPDPS'24), San Francisco, California.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </section>
 
-          
-           
           <!-- <h3 class="h3 service-title">What i'm doing</h3>
 
           <ul class="service-list">
@@ -358,13 +522,13 @@
 
           </ul> -->
 
-        <!-- </section> -->
+          <!-- </section> -->
 
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -462,55 +626,55 @@
 
         </section> -->
 
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -555,20 +719,18 @@
           </ul>
 
         </section> -->
+        </article>
 
-      </article>
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <!-- <section class="timeline">
+          <!-- <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -626,453 +788,513 @@
 
         </section> -->
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
             </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Undergraduate Research Assistant, HPC Lab, CCI, UNCC</h4>
-              <span>Aug 2023 — Present</span>
-              <p class="timeline-text">
-                Collaborated on job trace analysis research and co-authored a paper for IPDPS’24. Skilled in Python, Matplotlib, and PyTorch for data analysis and model development.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Web Developer, HPC Lab, CCI, UNCC</h4>
-              <span>Jun 2023 — Aug 2023</span>
-              <p class="timeline-text">
-                Developed a web application to visualize job trace cluster characteristics, implementing interactive charts with Python, Streamlit, and other technologies.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Student Web Developer, Africana Studies, UNCC</h4>
-              <span>Mar 2023 — Jun 2023</span>
-              <p class="timeline-text">
-                Designed and developed a multipage website for the Department of Africana Studies at UNCC, focusing on the Haitian Revolution with responsive design techniques.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Frontend Developer Intern, CornMarket Place</h4>
-              <span>May 2021 — Aug 2021</span>
-              <p class="timeline-text">
-                Worked at Cron to create client-side web application features using HTML, CSS, Bootstrap, and JavaScript. Built and tested APIs with Postman.
-              </p>
-            </li>
-          </ol>
-        </section>
-        
-        <section class="timeline">
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Undergraduate Research Assistant, HPC Lab, CCI, UNCC
+                </h4>
+                <span>Aug 2023 — Present</span>
+                <p class="timeline-text">
+                  Collaborated on job trace analysis research and co-authored a
+                  paper for IPDPS’24. Skilled in Python, Matplotlib, and PyTorch
+                  for data analysis and model development.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Developer, HPC Lab, CCI, UNCC
+                </h4>
+                <span>Jun 2023 — Aug 2023</span>
+                <p class="timeline-text">
+                  Developed a web application to visualize job trace cluster
+                  characteristics, implementing interactive charts with Python,
+                  Streamlit, and other technologies.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Student Web Developer, Africana Studies, UNCC
+                </h4>
+                <span>Mar 2023 — Jun 2023</span>
+                <p class="timeline-text">
+                  Designed and developed a multipage website for the Department
+                  of Africana Studies at UNCC, focusing on the Haitian
+                  Revolution with responsive design techniques.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Frontend Developer Intern, CornMarket Place
+                </h4>
+                <span>May 2021 — Aug 2021</span>
+                <p class="timeline-text">
+                  Worked at Cron to create client-side web application features
+                  using HTML, CSS, Bootstrap, and JavaScript. Built and tested
+                  APIs with Postman.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
-        
-            <h3 class="h3">Education</h3>
-          </div>
-        
-          <ol class="timeline-list">
-        
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bachelor of Science in Computer Science</h4>
-              <span>Jan. 2021 — Present</span>
-              <p class="timeline-text">
-                Currently pursuing my bachelor's degree at the University of North Carolina - Charlotte, maintaining a high GPA of 3.85. My coursework and research focus on leveraging advanced programming tools and artificial intelligence for data analysis and computational model development.
-              </p>
-            </li>
-        
-          </ol>
-        
-        </section>
-        
-        <section class="timeline">
-          <a class="resume_view_button" href="https://drive.google.com/file/d/1WB1UrMHAlKJroTDsRyT6KSfq5YEbNUhq/view?usp=sharing" target="_blank">View Full Resume</a>
-        </section>
 
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Science in Computer Science
+                </h4>
+                <span>Jan. 2021 — Present</span>
+                <p class="timeline-text">
+                  Currently pursuing my bachelor's degree at the University of
+                  North Carolina - Charlotte, maintaining a high GPA of 3.85. My
+                  coursework and research focus on leveraging advanced
+                  programming tools and artificial intelligence for data
+                  analysis and computational model development.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-        <section class="skill">
+          <section class="timeline">
+            <a
+              class="resume_view_button"
+              href="https://drive.google.com/file/d/1A7djfJKoI0o_-uf0cyQxhmfMQSapVr7S/view?usp=sharing"
+              target="_blank"
+              >View Full Resume</a
+            >
+          </section>
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-          <ul class="skills-list content-card">
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Application FullStack</h5>
+                  <data value="80">80%</data>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web Application FullStack</h5>
-                <data value="80">80%</data>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="70">70%</data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Generative AI Models</h5>
+                  <data value="50">50%</data>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web Design</h5>
-                <data value="70">70%</data>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Analysis</h5>
+                  <data value="75">75%</data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="80">80%</data>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Generative AI Models</h5>
-                <data value="50">50%</data>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="70">70%</data>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML/CSS</h5>
+                  <data value="85">85%</data>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML/CSS</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
-        <section class="projects">
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
 
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <!-- <li class="filter-item">
+              <!-- <li class="filter-item">
               <button data-filter-btn>Applications</button>
             </li> -->
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
+            </ul>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li> 
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-              <!-- <li class="select-item">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <!-- <li class="select-item">
                 <button data-select-item>Applications</button>
               </li> -->
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/lumos-job-trace.png"
+                      alt="script-genartion"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Job Trace Visualization Application
+                  </h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
               </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/the-goman-project.png"
+                      alt="script-genartion"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">The Goman Project</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/script-generation-project.png"
+                      alt="script-genartion"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Scriptify</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/shoeshop-project.png"
+                      alt="shoeshop"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">ShoeShop</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/youtubeclone-project.png"
+                      alt="YouTube Clone"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">YouTube Clone</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/image-generation-project.png"
+                      alt="image generator"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Imaginate</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/imagesearch-project.png"
+                      alt="image search"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Image Search</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/moviereview-project.png"
+                      alt="movie review"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Movie Review</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/blog-project.png"
+                      alt="blog project"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Blog Project</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/todo-project.png"
+                      alt="Task Manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/llamachat-project.png"
+                      alt="llama chat"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Llama Chat</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
             </ul>
+          </section>
+        </article>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/lumos-job-trace.png" alt="script-genartion" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Job Trace Visualization Application</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/the-goman-project.png" alt="script-genartion" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">The Goman Project</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/script-generation-project.png" alt="script-genartion" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Scriptify</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/shoeshop-project.png" alt="shoeshop" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ShoeShop</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/youtubeclone-project.png" alt="YouTube Clone" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">YouTube Clone</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/image-generation-project.png" alt="image generator" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Imaginate</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/imagesearch-project.png" alt="image search" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Image Search</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/moviereview-project.png" alt="movie review" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Movie Review</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/blog-project.png" alt="blog project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Blog Project</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/todo-project.png" alt="Task Manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/llamachat-project.png" alt="llama chat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Llama Chat</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <!-- <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1256,64 +1478,88 @@
 
       </article> -->
 
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208187.33078776953!2d-80.94313926357483!3d35.2270865609494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a02ede8a7fdf%3A0x9017c5b5eafe1f0!2sCharlotte%2C%20NC%2C%20USA!5e0!3m2!1sen!2sbd!4vINSERT_YOUR_TIMESTAMP_HERE"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208187.33078776953!2d-80.94313926357483!3d35.2270865609494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a02ede8a7fdf%3A0x9017c5b5eafe1f0!2sCharlotte%2C%20NC%2C%20USA!5e0!3m2!1sen!2sbd!4vINSERT_YOUR_TIMESTAMP_HERE"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form
+              action="https://formspree.io/f/mvoebgzb"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="https://formspree.io/f/mvoebgzb" method="POST" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
