@@ -169,7 +169,7 @@ article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -1521,7 +1521,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
-
 
 
   /**
