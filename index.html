@@ -70,7 +70,7 @@
 
           <div class="info-content">
             <h1 class="name" title="Monish Soundar Raj">Monish Soundar Raj</h1>
-            <p class="title">
+            <p class="title remove_this">
               <a href="https://git.io/typing-svg">
                 <img
                   src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=12&duration=4000&pause=1500&color=FCD76E&center=true&vCenter=true&width=700&lines=Hi+there!+I'm+Monish+Soundar+Raj;Research+Assistant+%40+HPC+Lab;Research+Assistant+%40+AI+Lab;Computer+Science+Student"
@@ -79,25 +79,27 @@
                 />
               </a>
             </p>
+            <p class="title show-text" style="display: none;">Research Assistant | Web Developer</p>
           </div>
           
-          <style>
-            @media (max-width: 600px) {
-              .typing-animation {
-                width: 400px; 
+          <script>
+            function toggleContent() {
+              const svgElement = document.querySelector(".remove_this");
+              const textElement = document.querySelector(".show-text");
+              if (window.innerWidth <= 1050) {
+                svgElement.style.display = "none";
+                textElement.style.display = "block";
+              } else {
+                svgElement.style.display = "block";
+                textElement.style.display = "none";
               }
             }
+            toggleContent();
+            window.addEventListener("resize", toggleContent);
+          </script>
           
-       
-            @media (max-width: 400px) {
-              .typing-animation {
-                width: 300px; 
-                font-size: 10px; 
-              }
-            }
-          </style>
           
-
+          
           <button class="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
 
@@ -227,6 +229,17 @@
               <strong>High-Performance Computing (HPC) Lab</strong> under <strong>Dr. Dong Dai</strong> and the 
               <strong>Artificial Intelligence (AI) Lab</strong> under <strong>Dr. Das</strong>. My work in the 
               HPC Lab focuses on <strong>leveraging artificial intelligence</strong> for <strong>synthetic dataset generation</strong> 
+              and <strong>job trace analysis</strong> in computing clusters. Additionally, I have co-authored papers published in <strong>JSSPP’24</strong> and 
+              <strong>IPDPS’24</strong>, driven by my unwavering passion for <strong>creating impactful solutions</strong> and 
+              <strong>building innovative web applications</strong>.
+            </p>
+
+            <!-- <p>
+              I am an <strong>undergraduate researcher</strong> and <strong>web developer</strong> at the 
+              <strong>University of North Carolina - Charlotte</strong>, actively contributing to cutting-edge projects in the 
+              <strong>High-Performance Computing (HPC) Lab</strong> under <strong>Dr. Dong Dai</strong> and the 
+              <strong>Artificial Intelligence (AI) Lab</strong> under <strong>Dr. Das</strong>. My work in the 
+              HPC Lab focuses on <strong>leveraging artificial intelligence</strong> for <strong>synthetic dataset generation</strong> 
               and <strong>job trace analysis</strong> in computing clusters. In the AI Lab, I contributed to the development of the 
               <strong>Multi-Scale Temporal Mamba (MS-Temba)</strong>, an architecture enabling 
               <strong>efficient temporal action detection</strong> in long videos, with impactful applications in 
@@ -235,7 +248,7 @@
               <strong>CVPR’25</strong>. Additionally, I have co-authored papers published in <strong>JSSPP’24</strong> and 
               <strong>IPDPS’24</strong>, driven by my unwavering passion for <strong>creating impactful solutions</strong> and 
               <strong>building innovative web applications</strong>.
-            </p>
+            </p> -->
             
           </section>
 
@@ -555,9 +568,12 @@
                 </h4>
                 <span>Aug 2024 — Present</span>
                 <p class="timeline-text">
+                  More info coming soon.
+                </p>
+                <!-- <p class="timeline-text">
                   
 Contributed to the development of Multi-Scale Temporal Mamba (MS-Temba), a novel architecture for efficient temporal action detection in long videos, optimizing GPU usage while achieving state-of-the-art performance. Submitted for CVPR’25.
-                </p>
+                </p> -->
               </li>
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
