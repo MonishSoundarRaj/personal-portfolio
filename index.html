@@ -390,36 +390,37 @@
           }
         
           .read-more-btn {
-            display: block;
-            margin-left: auto; 
-            margin-right: 0;
-            margin-top: 20px;
-            text-align: right;
-            background-color: #38434b;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            cursor: pointer;
-            border-radius: 25px;
-            transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
-            font-size: 12px;
-            border-radius: none;
-          }
-        
-          .read-more-btn:hover {
-            background-color: #606265;
-            transform: translateY(-2px) scale(1.05);
-          }
-        
-          .read-more-btn:active {
-            transform: scale(0.95);
-          }
-        
-          .read-more-btn.fade-out {
-            opacity: 0;
-            transform: scale(0.95);
-            pointer-events: none;
-          }
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 20px;
+        text-align: right;
+        background-color: transparent;
+        color: #c5cbd3;
+        border: 1px solid #b0c4de;
+        padding: 6px 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 13px;
+        transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+        color: #cdcdcd;
+        border-color: #00aaff;
+        transform: translateY(-2px);
+    }
+
+    .read-more-btn:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+
+    .read-more-btn.fade-out {
+        opacity: 0;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
         </style>
         
         <script>
@@ -439,32 +440,63 @@
           <section class="publications">
             <h3 class="h3 publications-title">Publications</h3>
             <ul class="publications-list">
-                <li>
-                    <p>
-                        <strong>An Empirical Study of Machine Learning-based Synthetic Job Trace Generation Methods.</strong><br />
-                        <span class="publication-detail">
-                            <strong>Monish Soundar Raj</strong>, Thomas MacDougall, Di Zhang, and Dong Dai<br />
-                            <em>Published at <strong>(JSSPP’24)</strong>, 2024.</em><br />
-                            <a href="https://drive.google.com/file/d/16DSXE8pSu0XJyWknAvgKtmo9lGymNOSr/view?usp=sharing" class="publication-link">View Paper</a>,
-                            <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="publication-link">GitHub Repository</a>
+              <style>
+                .button-group {
+                    display: flex;
+                    gap: 8px;
+                    margin-top: 8px;
+                }
+                .custom-button {
+                    display: inline-block;
+                    padding: 4px 14px; 
+                    font-size: 13px; 
+                    text-decoration: none !important; 
+                    color: #ecedee !important;
+                    border: 1px solid #ddd !important;
+                    border-radius: 3px;
+                    background-color: transparent !important; 
+                    text-align: center !important;
+                    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important; 
+                }
+                .custom-button:hover {
+                    color: #f1f1f1 !important; 
+                    border-color: #0056b3 !important; 
+                    transform: translateY(-2px); 
+                }
+            </style>
+            
+            
+            <li>
+                <p>
+                    <strong>An Empirical Study of Machine Learning-based Synthetic Job Trace Generation Methods.</strong><br />
+                    <span class="publication-detail">
+                        <strong>Monish Soundar Raj</strong>, Thomas MacDougall, Di Zhang, and Dong Dai<br />
+                        Published at <strong>27th JSSPP’24 (Job Scheduling Strategies for Parallel Processing)</strong>, 2024.<br />
+                    </span>
+                    <div class="button-group">
+                        <a href="https://drive.google.com/file/d/16DSXE8pSu0XJyWknAvgKtmo9lGymNOSr/view?usp=sharing" class="custom-button">View Paper</a>
+                        <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="custom-button">GitHub Repository</a>
+                    </div>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Cross-System Analysis of Job Characterization and Scheduling in Large-Scale Computing Clusters.</strong><br />
+                    <span class="publication-detail">
+                        Di Zhang, <strong>Monish Soundar Raj</strong>, Bing Xie, Sheng Di, Dong Dai<br />
+                        Published at <strong>38th IPDPS'24 (IEEE International Parallel and Distributed Processing Symposium)</strong>, 2024.<br />
+                        <span class="collaboration-highlight">
+                            Collaboration between <strong>UNC Charlotte, Microsoft, and Argonne National Laboratory</strong>
                         </span>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <strong>Cross-System Analysis of Job Characterization and Scheduling in Large-Scale Computing Clusters.</strong><br />
-                        <span class="publication-detail">
-                            Di Zhang, <strong>Monish Soundar Raj</strong>, Bing Xie, Sheng Di, Dong Dai<br />
-                            <em>Published at <strong>IPDPS'24</strong>, 2024.</em><br />
-                            <span class="collaboration-highlight">
-                              Collaboration between <strong>UNC Charlotte, Microsoft, and Argonne National Laboratory</strong>
-                            </span>
-                            <a href="https://drive.google.com/file/d/12-7PToUaraiZ4J1UPTlPLWlJxhe6dezU/view" class="publication-link">View Paper</a>,
-                            <a href="https://lumos-job-traces.streamlit.app/" class="publication-link">Web App</a>,
-                            <a href="https://github.com/DIR-LAB/lumos" class="publication-link">GitHub Repository</a>
-                        </span>
-                    </p>
-                </li>
+                    </span>
+                    <div class="button-group">
+                        <a href="https://drive.google.com/file/d/12-7PToUaraiZ4J1UPTlPLWlJxhe6dezU/view" class="custom-button">View Paper</a>
+                        <a href="https://lumos-job-traces.streamlit.app/" class="custom-button">Web App</a>
+                        <a href="https://github.com/DIR-LAB/lumos" class="custom-button">GitHub Repository</a>
+                    </div>
+                </p>
+            </li>
+            
             </ul>
         </section>
         
