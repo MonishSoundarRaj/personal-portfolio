@@ -75,7 +75,6 @@
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
 
-
   /* font-size */
   --fs-1: 24px;
   --fs-2: 18px;
@@ -156,10 +155,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -501,7 +496,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -1836,6 +1831,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: var(--fw-300);
   list-style: square;
   margin-left: 30px;
+  padding-bottom: 8px;
+}
+
+.new-list p{
+  line-height: 1.8;
 }
 
 .a-link{
@@ -1845,6 +1845,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-style: italic;
 }
 
+.publications-list li{
+    padding-bottom: 10px;
+}
+
+.publications-list p{
+  line-height: 1.8;
+}
 /* Custom */
 
 .resume_view_button {
