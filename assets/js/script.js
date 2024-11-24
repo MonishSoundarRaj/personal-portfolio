@@ -71,20 +71,21 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
   for (let i = 0; i < filterItems.length; i++) {
+    // Normalize comparison by converting both to lowercase and trimming spaces
+    const itemCategory = filterItems[i].dataset.category.toLowerCase().trim();
+    const normalizedSelectedValue = selectedValue.toLowerCase().trim();
 
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+    if (normalizedSelectedValue === "all") {
+      filterItems[i].classList.add("active"); // Show all items
+    } else if (normalizedSelectedValue === itemCategory) {
+      filterItems[i].classList.add("active"); // Show matching category
     } else {
-      filterItems[i].classList.remove("active");
+      filterItems[i].classList.remove("active"); // Hide non-matching items
     }
-
   }
+};
 
-}
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
